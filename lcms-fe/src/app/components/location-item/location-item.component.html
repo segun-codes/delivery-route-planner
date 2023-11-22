@@ -1,0 +1,10 @@
+<div class="location">
+    <h3>{{ location.name }} 
+        <fa-icon
+            (click)="onDelete(location)" 
+            [ngStyle]="{color: 'red'}" 
+            [icon]="faRemove">
+        </fa-icon>
+    </h3>
+    <h3>{{ location.clearingCost }}</h3>
+</div>

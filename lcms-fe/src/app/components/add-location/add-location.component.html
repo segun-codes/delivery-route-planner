@@ -1,0 +1,11 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control"> 
+        <label for="text">Location</label>
+        <input type="text" name="location" id="text" [(ngModel)]="location" placeholder="Add one of A B C D E or F only" required minlength="1" maxlength="1"/>
+    </div>
+    <div class="form-control"> 
+        <label for="text">Clearing Cost</label>
+        <input type="number" name="clearingCost" id="cctext" [(ngModel)]="clearingCost" placeholder="Add clearing cost in $"/>
+    </div>
+    <input type="submit" name="Add Location" values="write location" class="btn btn-block"/>
+</form>

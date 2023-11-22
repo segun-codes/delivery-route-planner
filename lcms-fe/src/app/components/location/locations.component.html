@@ -1,0 +1,7 @@
+<app-add-location (onAddLocation)="addLocation($event)"></app-add-location>
+<app-location-item 
+    *ngFor="let location of locations" 
+    [location]="location"
+    (onDeleteLocation)="deleteLocation(location)">
+></app-location-item>
+
